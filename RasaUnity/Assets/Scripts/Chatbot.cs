@@ -80,7 +80,7 @@ public class Chatbot : MonoBehaviour
         // Set all images to transparent
         foreach (Image img in ImageTec)
         {
-            img.color = new Color(1, 1, 1, 0.2352941f);
+            img.color = new Color(1, 1, 1, 0.05882353f);
         }
 
         // Modified color image RGB
