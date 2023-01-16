@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: programming path
+  steps:
+  - intent: Computer_Science_Courses
+  - action: utter_Courses
+  - intent: data_science
+  - action: utter_data_science
+  - intent: web_development
+  - action: utter_web_development
+  - intent: android_development
+  - action: utter_android_development
+  - intent: IOS_development
+  - action: utter_IOS_development
+  - intent: game_development
+  - action: utter_game_development
+  - intent: game_development_engine
+  - action: utter_game_development_engine
+  - intent: artificial_intelligence
+  - action: utter_artificial_intelligence
+  - intent: artificial_intelligence_libs
+  - action: utter_artificial_intelligence_libs
+  - intent: data_engineering
+  - action: utter_data_engineering
+  - intent: data_engineering_tools
+  - action: utter_data_engineering_tools
+  - intent: operating_system
+  - action: utter_operating_system
+  - intent: embedded_systems
+  - action: utter_embedded_systems
+  - intent: embedded_systems_tools 
+  - action: utter_embedded_systems_tools
+  - intent: database
+  - action: utter_database
+
+

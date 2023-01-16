@@ -1,0 +1,88 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'Here are some Computer Science Courses' anytime the user asks for Computer Science Courses
+  steps:
+  - intent: Computer_Science_Courses
+  - action: utter_Courses
+
+- rule: Say ''Python, R language and Scala are the most popular languages for data science.' any time the user asks for data science
+  steps:
+  - intent: data_science
+  - action: utter_data_science
+
+- rule: Say ''JavaScript, TypeScript, PHP are the most popular languages for web development.' any time the user asks for web development
+  steps:
+  - intent: web_development
+  - action: utter_web_development
+
+- rule: Say ''Kotlin, Java, C++ are the most popular languages for android development.' any time the user asks for android development
+  steps:
+  - intent: android_development
+  - action: utter_android_development
+
+- rule: Say ''Swift, Objective-C, C++ are the most popular languages for IOS development.' any time the user asks for IOS development
+  steps:
+  - intent: IOS_development
+  - action: utter_IOS_development
+
+- rule: Say ''C++, C#, Java are the most popular languages for game development.' any time the user asks for game development
+  steps:
+  - intent: game_development
+  - action: utter_game_development
+
+- rule: Say ''Unity, Unreal Engine, CryEngine are the most popular engines for game development.' any time the user asks for game development engine
+  steps:
+  - intent: game_development_engine
+  - action: utter_game_development_engine
+
+- rule: Say ''Python, R language, Java, Julia and LISP are the most popular languages for artificial intelligence.' any time the user asks for artificial intelligence
+  steps:
+  - intent: artificial_intelligence
+  - action: utter_artificial_intelligence
+
+- rule: Say ''TensorFlow, Keras, PyTorch, Caffe, Theano are the most popular libraries for artificial intelligence.' any time the user asks for artificial intelligence libraries
+  steps:
+  - intent: artificial_intelligence_libs
+  - action: utter_artificial_intelligence_libs
+
+- rule: Say ''Python, Java, Scala, C++ are the most popular languages for data engineering.' any time the user asks for data engineering
+  steps:
+  - intent: data_engineering
+  - action: utter_data_engineering
+
+- rule: Say ''Apache Spark, Apache Hadoop, Apache Kafka, Apache Flink, Apache Storm are the most popular tools for data engineering.' any time the user asks for data engineering tools
+  steps:
+  - intent: data_engineering_tools
+  - action: utter_data_engineering_tools
+
+- rule: Say ''Linux, Windows, Mac OS are the most popular operating systems.' any time the user asks for operating system
+  steps:
+  - intent: operating_system
+  - action: utter_operating_system
+
+- rule: Say ''C, C++, Java, Python are the most popular languages for embedded systems.' any time the user asks for embedded systems
+  steps:
+  - intent: embedded_systems
+  - action: utter_embedded_systems
+
+- rule: Say ''Arduino, Raspberry Pi, BeagleBone Black, Intel Galileo are the most popular tools for embedded systems.' any time the user asks for embedded systems tools
+  steps:
+  - intent: embedded_systems_tools
+  - action: utter_embedded_systems_tools
+
+- rule: Say ''MySQL, PostgreSQL, MongoDB, Oracle, SQLite are the most popular databases.' any time the user asks for databases
+  steps:
+  - intent: database
+  - action: utter_database

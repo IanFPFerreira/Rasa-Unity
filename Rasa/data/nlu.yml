@@ -1,0 +1,212 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: Computer_Science_Courses
+  examples: |
+    - C++ Programming
+    - Python Programming
+    - Java Programming
+    - C# Programming
+    - HTML / CSS
+    - Java Script
+    - Web Development
+    - Android Development
+    - Game Development
+    - Artificial Intelligence
+    - Deep Learning
+    - Machine Learning
+    - Data Science
+    - Computer vision
+    - Data Engineering
+    - Operating System
+    - Networking
+    - Cyber Security
+    - Blockchain
+    - Embedded systems
+
+- intent: data_science
+  examples: |
+    - Best languages to work with Data Science
+    - What are the best languages for Data Science
+    - Most used languages for Data Science
+    - What are the most used languages for Data Science
+
+- intent: web_development
+  examples: |
+    - Best languages to work with Web Development
+    - What are the best languages for Web Development
+    - Most used languages for Web Development
+    - What are the most used languages for Web Development
+
+- intent: android_development
+  examples: |
+    - Best languages to work with Android Development
+    - What are the best languages for Android Development
+    - Most used languages for Android Development
+    - What are the most used languages for Android Development
+
+- intent: IOS_development
+  examples: |
+    - Best languages to work with IOS Development
+    - What are the best languages for IOS Development
+    - Most used languages for IOS Development
+    - What are the most used languages for IOS Development
+
+- intent: game_development
+  examples: |
+    - Best languages to work with Game Development
+    - What are the best languages for Game Development
+    - Most used languages for Game Development
+    - What are the most used languages for Game Development
+
+- intent: game_development_engine
+  examples: |
+    - Best engines to work with Game Development
+    - What are the best engines for Game Development
+    - Most used engines for Game Development
+    - What are the most used engines for Game Development
+
+- intent: artificial_intelligence
+  examples: |
+    - Best languages to work with Artificial Intelligence
+    - What are the best languages for Artificial Intelligence
+    - Most used languages for Artificial Intelligence
+    - What are the most used languages for Artificial Intelligence
+
+- intent: artificial_intelligence_libs
+  examples: |
+    - Best libraries to work with Artificial Intelligence
+    - What are the best libraries for Artificial Intelligence
+    - Most used libraries for Artificial Intelligence
+    - What are the most used libraries for Artificial Intelligence
+
+- intent: data_engineering
+  examples: |
+    - Best languages to work with Data Engineering
+    - What are the best languages for Data Engineering
+    - Most used languages for Data Engineering
+    - What are the most used languages for Data Engineering
+
+- intent: data_engineering_tools
+  examples: |
+    - Best tools to work with Data Engineering
+    - What are the best tools for Data Engineering
+    - Most used tools for Data Engineering
+    - What are the most used tools for Data Engineering
+
+- intent: operating_system
+  examples: |
+    - Best Operating Systems
+    - What are the best Operating Systems
+    - Most used Operating Systems
+    - What are the most used Operating Systems
+
+- intent: embedded_systems
+  examples: |
+    - Best languages to work with Embedded Systems
+    - What are the best languages for Embedded Systems
+    - Most used languages for Embedded Systems
+    - What are the most used languages for Embedded Systems
+
+- intent: embedded_systems_tools
+  examples: |
+    - Best tools to work with Embedded Systems
+    - What are the best tools for Embedded Systems
+    - Most used tools for Embedded Systems
+    - What are the most used tools for Embedded Systems
+
+- intent: database
+  examples: |
+    - Best Databases
+    - What are the best Databases
+    - Most used Databases
+    - What are the most used Databases

@@ -1,0 +1,94 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Computer_Science_Courses
+  - data_science
+  - web_development
+  - android_development
+  - IOS_development
+  - game_development
+  - game_development_engine
+  - artificial_intelligence
+  - artificial_intelligence_libs
+  - data_engineering
+  - data_engineering_tools
+  - operating_system
+  - embedded_systems
+  - embedded_systems_tools 
+  - database
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_Courses:
+  - text: "Here are some Computer Science Courses:"
+
+  utter_data_science:
+  - text: "Python, R language and Scala are the most popular languages for data science."
+
+  utter_web_development:
+  - text: "JavaScript, TypeScript, PHP are the most popular languages for web development."
+
+  utter_android_development:
+  - text: "Kotlin, Java, C++ are the most popular languages for android development."
+
+  utter_IOS_development:
+  - text: "Swift, Objective-C, C++ are the most popular languages for IOS development."
+
+  utter_game_development:
+  - text: "C++, C#, Java are the most popular languages for game development."
+
+  utter_game_development_engine:
+  - text: "Unity, Unreal Engine, CryEngine are the most popular engines for game development."
+
+  utter_artificial_intelligence:
+  - text: "Python, R language, Java, Julia and LISP are the most popular languages for artificial intelligence."
+
+  utter_artificial_intelligence_libs:
+  - text: "TensorFlow, Keras, PyTorch, Caffe, Theano are the most popular libraries for artificial intelligence."
+
+  utter_data_engineering:
+  - text: "Python, Java, Scala, C++ are the most popular languages for data engineering."
+
+  utter_data_engineering_tools:
+  - text: "Apache Spark, Apache Hadoop, Apache Kafka, Apache Flink, Apache Storm are the most popular tools for data engineering."
+  
+  utter_operating_system:
+  - text: "Linux, Windows, Mac OS are the most popular operating systems."
+
+  utter_embedded_systems:
+  - text: "C, C++, Java, Python are the most popular languages for embedded systems."
+
+  utter_embedded_systems_tools:
+  - text: "Arduino, Raspberry Pi, BeagleBone Black, Intel Galileo are the most popular tools for embedded systems."
+
+  utter_database:
+  - text: "MySQL, PostgreSQL, MongoDB, Oracle, SQLite are the most popular databases."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
