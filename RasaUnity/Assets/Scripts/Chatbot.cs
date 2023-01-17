@@ -61,10 +61,10 @@ public class Chatbot : MonoBehaviour
 
 		yield return request.SendWebRequest();
 
-        RecieveResponse(request.downloadHandler.text);
+        ReceiveResponse(request.downloadHandler.text);
     }
 
-    public void RecieveResponse(string response)
+    public void ReceiveResponse(string response)
     {
         // Deserialize response recieved from the bot
         RootReceiveMessageJson root = JsonUtility.FromJson<RootReceiveMessageJson>("{\"messages\":" + response + "}");
