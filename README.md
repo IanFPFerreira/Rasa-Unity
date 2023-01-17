@@ -46,3 +46,6 @@ The project is a Unity application that uses Rasa to perform a kind of conversat
 - rasa 3.4.0
 - rasa-sdk 3.4.0
 - Unity 2021.3.16f1
+
+
+**OBS:** Project developed as a way to contribute to the Rasa repository, showing a way to connect Rasa with Unity. [Issue #14 (RasaHQ/contributors)](https://github.com/RasaHQ/contributors/issues/14)
