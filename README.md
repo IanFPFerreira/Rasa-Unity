@@ -33,8 +33,8 @@ rasa run
 
 ## What is the project
 
-The project is a Unity application that uses Rasa to perform a kind of conversation, with the conversation focused on programming and the responses appearing in the form of images. In this sense, Rasa is used to identify the intention of the message sent by the user, and respond according to the identified intention. After this occurs, Rasa returns the response to Unity, which in turn displays the response to the user in the form of an image.
-
+The project is a Unity application that uses Rasa to carry out a conversation between the Player and an NPC, with the conversation focused on programming. In this sense, Rasa is used to identify the intention of the message sent by the user, and respond according to the identified intention. After this occurs,
+Rasa returns the response to Unity, which in turn displays the response to the user.
 
 ![imagem](assets/UnityRasa.gif)
 
@@ -49,3 +49,6 @@ The project is a Unity application that uses Rasa to perform a kind of conversat
 
 
 **OBS:** Project developed as a way to contribute to the Rasa repository, showing a way to connect Rasa with Unity. [Issue #14 (RasaHQ/contributors)](https://github.com/RasaHQ/contributors/issues/14)
+
+
+**OBS 2:** Another approach to using Rasa with Unity is in the branch [ImageRasaChat](https://github.com/IanFPFerreira/Rasa-Unity/tree/ImageRasaChat)
