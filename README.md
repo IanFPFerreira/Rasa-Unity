@@ -31,12 +31,12 @@ rasa run
 6. With Rasa running, open the Unity project in the directory `RasaUnity` that is in this repository, and run the project. Another alternative is to extract the `Build.zip` file and run the project with the executable `RasaUnity.exe`.
 
 
-## What is the project
+<!-- ## What is the project
 
 The project is a Unity application that uses Rasa to carry out a conversation between the Player and an NPC, with the conversation focused on programming. In this sense, Rasa is used to identify the intention of the message sent by the user, and respond according to the identified intention. After this occurs,
 Rasa returns the response to Unity, which in turn displays the response to the user.
 
-![imagem](assets/UnityRasa.gif)
+![imagem](assets/UnityRasa.gif) -->
 
 
 ### Specifications and versions used
