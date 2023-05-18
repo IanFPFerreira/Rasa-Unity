@@ -37,16 +37,40 @@ public class Chatbot : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI npcText;
     public TextMeshProUGUI userText;
+    public GameObject buttonVoice;
+    public GameObject inpultField;
+    public TMP_InputField eraseText;
 
-
-    private const string rasa_url = "http://localhost:5005/webhooks/rest/webhook";
+    private bool isOff = true;
+    
     private DictationRecognizer dictationRecognizer;
+    
+    private const string rasa_url = "http://localhost:5005/webhooks/rest/webhook";
 
-    private void Start()
+    public void ChangeColorButton()
     {
-        dictationRecognizer = new DictationRecognizer();
-        dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
-        dictationRecognizer.Start();
+        if (isOff)
+        {
+            buttonVoice.GetComponent<Image>().color = Color.green;
+            isOff = false;
+            inpultField.gameObject.SetActive(false);
+            userText.text = "";
+            npcText.text = "";
+            eraseText.text = "";
+
+            // Activate voice
+            dictationRecognizer = new DictationRecognizer();
+            dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
+            dictationRecognizer.Start();
+        }
+        else
+        {
+            buttonVoice.GetComponent<Image>().color = Color.red;
+            isOff = true;
+            inpultField.gameObject.SetActive(true);
+            dictationRecognizer.Stop();
+        }
+        
     }
 
     private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
@@ -105,4 +129,5 @@ public class Chatbot : MonoBehaviour
         }
 
     }
+
 }
