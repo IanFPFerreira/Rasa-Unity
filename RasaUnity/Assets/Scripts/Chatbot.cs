@@ -36,9 +36,7 @@ public class Chatbot : MonoBehaviour
     public string npcMsg;
     [Header("UI")]
     public TextMeshProUGUI npcText;
-    public TextMeshProUGUI userText;
     public GameObject buttonVoice;
-    public GameObject inpultField;
     public TMP_InputField eraseText;
 
     private bool isOff = true;
@@ -53,10 +51,8 @@ public class Chatbot : MonoBehaviour
         {
             buttonVoice.GetComponent<Image>().color = Color.green;
             isOff = false;
-            inpultField.gameObject.SetActive(false);
-            userText.text = "";
-            npcText.text = "";
-            eraseText.text = "";
+            //npcText.text = "";
+            //eraseText.text = "";
 
             // Activate voice
             dictationRecognizer = new DictationRecognizer();
@@ -67,7 +63,7 @@ public class Chatbot : MonoBehaviour
         {
             buttonVoice.GetComponent<Image>().color = Color.red;
             isOff = true;
-            inpultField.gameObject.SetActive(true);
+            eraseText.text = "";
             dictationRecognizer.Stop();
         }
         
@@ -75,13 +71,13 @@ public class Chatbot : MonoBehaviour
 
     private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
     {
+        eraseText.text = text;
         SendMessageToRasa(text);
     }
 
     public void SendMessageToRasa(string s)
     {
         Debug.Log("Input: " + s);
-        userText.text = s;
         // Create a json object from user message
         PostMessageJson postMessage = new PostMessageJson
         {
