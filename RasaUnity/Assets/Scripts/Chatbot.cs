@@ -45,6 +45,12 @@ public class Chatbot : MonoBehaviour
     
     private const string rasa_url = "http://localhost:5005/webhooks/rest/webhook";
 
+
+    public void Start()
+    {
+        npcText.text = "";
+    }
+
     public void ChangeColorButton()
     {
         if (isOff)
